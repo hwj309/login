@@ -16,15 +16,14 @@
 <span id="aaa"></span>
 아이읻 : <input type="text" id="id"/>
 비밀번호 : <input type="passward" id="pwd"/>
-<button onclick="login()">
 
 </body>
 </html>
 
 <script>
-	$("document").ready(function() {
+	/* $("document").ready(function() {
 		
-	})
+	}) */
 	
 	function login() {
 		

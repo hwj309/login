@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<!-- <Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%d{HH:mm:ss.SSS}] [%-5level] %logger{36}:%L - %msg%n"/>
+		</Console>
+		<RollingFile name="file" fileName="/home/user/sec/sec-wms-clt/logs/sec-pda.log"
+								filePattern="/home/user/sec/sec-wms-clt/logs/${date:yyyy}/${date:MM}/sec-pda_%d{yyyyMMdd}.log">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36}:%L - %msg%n"/>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+		</RollingFile>		
+	</Appenders> -->
+	
+	<Loggers>
+		<Logger name="com.admin" level="DEBUG" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="com.zaxxer" level="OFF" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+		
+		<Logger name="jdbc" level="OFF" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="jdbc.connection" level="OFF" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="jdbc.sqlonly" level="OFF" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>	
+		<Logger name="jdbc.sqltiming" level="DEBUG" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>	
+		<Logger name="jdbc.audit" level="OFF" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>	
+		<Logger name="jdbc.resultset" level="OFF" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>	
+		<Logger name="jdbc.resultsettable" level="DEBUG" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>	
+		<Root level="ERROR">
+			<AppenderRef ref="Console"/>
+		</Root>
+	
+	</Loggers>
+	
+</Configuration>
