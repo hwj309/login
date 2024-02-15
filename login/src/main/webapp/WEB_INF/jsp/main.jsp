@@ -21,9 +21,7 @@
 </html>
 
 <script>
-	/* $("document").ready(function() {
-		
-	}) */
+	
 	
 	function login() {
 		
